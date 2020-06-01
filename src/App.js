@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { createBrowserHistory as createHistory } from "history";
 import { AppBar, Tabs, Tab, Button, CssBaseline, Container, DialogTitle, Dialog, Typography } from '@material-ui/core';
-import RssAdd from './components/rssAdd';
+import RssAdd from './containers/rssAdd';
 import RssList from './components/rssList';
 import RssDetail from './components/rssDetail';
 const history = createHistory();
