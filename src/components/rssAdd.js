@@ -52,7 +52,7 @@ const RssAddComponent = ({addRss}) => {
             }
           </Grid>
           <Grid item xs={12}>
-            <Link to='/' color="inherit" style={{textDecoration:'none', color:'inherit'}}>
+            <Link to='/' style={{textDecoration:'none', color:'inherit'}}>
               <Button variant="contained" fullWidth >戻る</Button>
             </Link>
           </Grid>
