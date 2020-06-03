@@ -10,7 +10,7 @@ const rssListItem = (props) => {
     item = 
       <List component="nav" aria-label="main mailbox folders">
         {rsses.map(function(rss) {
-          if (rss.id  == 0){
+          if (rss.id  === 0){
             return;
           }
 

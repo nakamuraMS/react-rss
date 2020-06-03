@@ -15,6 +15,15 @@ const initialState = [
 export default function rsses(state = initialState, action) {
   switch (action.type) {
     case ADD_RSS:
+      let data =[];
+      data.push({
+        id: state.reduce((maxId, rss) => Math.max(rss.id, maxId), -1) + 1,
+        name: action.name,
+        url: action.url
+      });
+      let key = 'rss' + data[0]['id'];
+      localStorage.setItem(key, JSON.stringify(data));
+
       return [
         ...state,
         {

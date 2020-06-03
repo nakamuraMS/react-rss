@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { createBrowserHistory as createHistory } from "history";
-import { AppBar, Tabs, Tab, Button, CssBaseline, Container, DialogTitle, Dialog, Typography } from '@material-ui/core';
+import { AppBar, Tabs, Tab, CssBaseline, Container } from '@material-ui/core';
 import RssAdd from './containers/rssAdd';
 import RssList from './containers/rssList';
 import RssDetail from './components/rssDetail';
@@ -15,7 +15,7 @@ function App() {
         <CssBaseline />
         <BrowserRouter history={history}>
           <AppBar position="static">
-            <Tabs aria-label="">
+            <Tabs aria-label="tabs">
               <Link to='/' style={{textDecoration:'none', color:'inherit'}}><Tab label="Home" /></Link>
               <Link to='/add' style={{textDecoration:'none', color:'inherit'}}><Tab label="RSS追加" /></Link>
             </Tabs>
