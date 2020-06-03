@@ -21,8 +21,8 @@ export default function rsses(state = initialState, action) {
         name: action.name,
         url: action.url
       });
-      let key = 'rss' + data[0]['id'];
-      localStorage.setItem(key, JSON.stringify(data));
+      localStorage.setItem('rss', JSON.stringify(data));
+      alert('登録に成功しました');
 
       return [
         ...state,

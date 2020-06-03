@@ -5,7 +5,7 @@ import { createBrowserHistory as createHistory } from "history";
 import { AppBar, Tabs, Tab, CssBaseline, Container } from '@material-ui/core';
 import RssAdd from './containers/rssAdd';
 import RssList from './containers/rssList';
-import RssDetail from './components/rssDetail';
+import RssDetail from './containers/rssDetail';
 const history = createHistory();
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
             <RssList />
           </Route>
           <Route path='/add' component={RssAdd}/>
-          <Route path='/detail' component={RssDetail}/>
+          <Route path='/detail/:id' component={RssDetail}/>
         </BrowserRouter>
 
       </Container>
